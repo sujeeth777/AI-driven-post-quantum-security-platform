@@ -1,0 +1,5 @@
+# DELIBERATELY VULNERABLE DEMO APPLICATION — pinned legacy dependencies
+pycryptodome==3.9.0
+cryptography==2.8
+PyJWT==1.7.1
+requests==2.22.0

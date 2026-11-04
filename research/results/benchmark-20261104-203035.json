@@ -1,0 +1,255 @@
+{
+  "meta": {
+    "timestamp_utc": "2026-11-04T20:30:34.975636+00:00",
+    "platform": "Windows-11-10.0.26100-SP0",
+    "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+    "python": "3.13.14",
+    "message_size": 1040,
+    "iterations": 200,
+    "keygen_iterations": 50
+  },
+  "results": [
+    {
+      "primitive": "ML-KEM-768",
+      "family": "PQC KEM",
+      "op": "keygen",
+      "iterations": 50,
+      "mean_ms": 0.0959619996137917,
+      "median_ms": 0.09685000986792147,
+      "p95_ms": 0.10359997395426035,
+      "min_ms": 0.08789997082203627,
+      "public_key": 1206,
+      "ciphertext": 1088,
+      "shared_secret": 32
+    },
+    {
+      "primitive": "ML-KEM-768",
+      "family": "PQC KEM",
+      "op": "encapsulate",
+      "iterations": 200,
+      "mean_ms": 0.02372799935983494,
+      "median_ms": 0.023100001271814108,
+      "p95_ms": 0.026399968191981316,
+      "min_ms": 0.022799998987466097
+    },
+    {
+      "primitive": "ML-KEM-768",
+      "family": "PQC KEM",
+      "op": "decapsulate",
+      "iterations": 200,
+      "mean_ms": 0.03765949950320646,
+      "median_ms": 0.037999998312443495,
+      "p95_ms": 0.04179996903985739,
+      "min_ms": 0.0344999716617167
+    },
+    {
+      "primitive": "ML-DSA-65",
+      "family": "PQC signature",
+      "op": "keygen",
+      "iterations": 50,
+      "mean_ms": 0.10806000092998147,
+      "median_ms": 0.10390000534243882,
+      "p95_ms": 0.11449999874457717,
+      "min_ms": 0.10000000474974513,
+      "public_key": 1974,
+      "signature": 3309
+    },
+    {
+      "primitive": "ML-DSA-65",
+      "family": "PQC signature",
+      "op": "sign",
+      "iterations": 200,
+      "mean_ms": 0.5284150002989918,
+      "median_ms": 0.4398500022944063,
+      "p95_ms": 1.3064999948255718,
+      "min_ms": 0.17549999756738544,
+      "message_size": 1040
+    },
+    {
+      "primitive": "ML-DSA-65",
+      "family": "PQC signature",
+      "op": "verify",
+      "iterations": 200,
+      "mean_ms": 0.10468350083101541,
+      "median_ms": 0.10289999772794545,
+      "p95_ms": 0.11299998732283711,
+      "min_ms": 0.09290000889450312
+    },
+    {
+      "primitive": "RSA-2048",
+      "family": "classical (Shor-vulnerable)",
+      "op": "keygen",
+      "iterations": 5,
+      "mean_ms": 45.26283999439329,
+      "median_ms": 39.23880000365898,
+      "p95_ms": 67.10450001992285,
+      "min_ms": 24.783799948636442,
+      "public_key": 256,
+      "signature": 256
+    },
+    {
+      "primitive": "RSA-2048",
+      "family": "classical (Shor-vulnerable)",
+      "op": "sign",
+      "iterations": 200,
+      "mean_ms": 0.38646600005449727,
+      "median_ms": 0.37369999336078763,
+      "p95_ms": 0.43699995148926973,
+      "min_ms": 0.3618999617174268
+    },
+    {
+      "primitive": "RSA-2048",
+      "family": "classical (Shor-vulnerable)",
+      "op": "verify",
+      "iterations": 200,
+      "mean_ms": 0.018035499088000506,
+      "median_ms": 0.017600017599761486,
+      "p95_ms": 0.01880002673715353,
+      "min_ms": 0.0171000137925148
+    },
+    {
+      "primitive": "RSA-2048-OAEP",
+      "family": "classical (Shor-vulnerable)",
+      "op": "encrypt",
+      "iterations": 200,
+      "mean_ms": 0.016561500378884375,
+      "median_ms": 0.016499951016157866,
+      "p95_ms": 0.017300015315413475,
+      "min_ms": 0.016000005416572094,
+      "ciphertext": 256
+    },
+    {
+      "primitive": "RSA-2048-OAEP",
+      "family": "classical (Shor-vulnerable)",
+      "op": "decrypt",
+      "iterations": 200,
+      "mean_ms": 0.37982149980962276,
+      "median_ms": 0.3727500152308494,
+      "p95_ms": 0.45900000259280205,
+      "min_ms": 0.33409998286515474
+    },
+    {
+      "primitive": "X25519",
+      "family": "classical KEX",
+      "op": "keygen",
+      "iterations": 50,
+      "mean_ms": 0.021291999146342278,
+      "median_ms": 0.021150015527382493,
+      "p95_ms": 0.022199994418770075,
+      "min_ms": 0.020599982235580683
+    },
+    {
+      "primitive": "X25519",
+      "family": "classical KEX",
+      "op": "ecdh",
+      "iterations": 200,
+      "mean_ms": 0.02127099927747622,
+      "median_ms": 0.020899984519928694,
+      "p95_ms": 0.022499996703118086,
+      "min_ms": 0.020299979951232672
+    },
+    {
+      "primitive": "Ed25519",
+      "family": "classical signature",
+      "op": "keygen",
+      "iterations": 50,
+      "mean_ms": 0.02161799930036068,
+      "median_ms": 0.02139998832717538,
+      "p95_ms": 0.022899999748915434,
+      "min_ms": 0.019900035113096237
+    },
+    {
+      "primitive": "Ed25519",
+      "family": "classical signature",
+      "op": "sign",
+      "iterations": 200,
+      "mean_ms": 0.022610000160057098,
+      "median_ms": 0.022199994418770075,
+      "p95_ms": 0.02370000584051013,
+      "min_ms": 0.021599989850074053
+    },
+    {
+      "primitive": "Ed25519",
+      "family": "classical signature",
+      "op": "verify",
+      "iterations": 200,
+      "mean_ms": 0.06424550083465874,
+      "median_ms": 0.06264998228289187,
+      "p95_ms": 0.06660004146397114,
+      "min_ms": 0.06079999729990959
+    },
+    {
+      "primitive": "AES-256-GCM (1 KiB)",
+      "family": "symmetric",
+      "op": "encrypt",
+      "iterations": 200,
+      "mean_ms": 0.0026674996479414403,
+      "median_ms": 0.0017499842215329409,
+      "p95_ms": 0.004700035788118839,
+      "min_ms": 0.0015999539755284786,
+      "message_size": 1040
+    },
+    {
+      "primitive": "AES-256-GCM (1 KiB)",
+      "family": "symmetric",
+      "op": "decrypt",
+      "iterations": 200,
+      "mean_ms": 0.0019360007718205452,
+      "median_ms": 0.001600012183189392,
+      "p95_ms": 0.0023999600671231747,
+      "min_ms": 0.0013999524526298046
+    },
+    {
+      "primitive": "AES-256-GCM (64 KiB)",
+      "family": "symmetric",
+      "op": "encrypt",
+      "iterations": 200,
+      "mean_ms": 0.011766999959945679,
+      "median_ms": 0.010800024028867483,
+      "p95_ms": 0.011999974958598614,
+      "min_ms": 0.009699957445263863,
+      "message_size": 66560
+    },
+    {
+      "primitive": "AES-256-GCM (64 KiB)",
+      "family": "symmetric",
+      "op": "decrypt",
+      "iterations": 200,
+      "mean_ms": 0.009980500908568501,
+      "median_ms": 0.009700015652924776,
+      "p95_ms": 0.010700023267418146,
+      "min_ms": 0.009300012607127428
+    },
+    {
+      "primitive": "Hybrid exchange (full)",
+      "family": "Q-SHIELD channel",
+      "op": "build_package",
+      "iterations": 200,
+      "mean_ms": 0.6730624998454005,
+      "median_ms": 0.5546500033233315,
+      "p95_ms": 1.4665999915450811,
+      "min_ms": 0.2516999957151711,
+      "package_size": 7588
+    },
+    {
+      "primitive": "Hybrid exchange (full)",
+      "family": "Q-SHIELD channel",
+      "op": "open_package",
+      "iterations": 200,
+      "mean_ms": 0.19697399984579533,
+      "median_ms": 0.18829997861757874,
+      "p95_ms": 0.2277999883517623,
+      "min_ms": 0.17089996254071593
+    },
+    {
+      "primitive": "Hybrid KDF (HKDF-SHA256)",
+      "family": "Q-SHIELD channel",
+      "op": "derive_session_key",
+      "iterations": 200,
+      "mean_ms": 0.002981499710585922,
+      "median_ms": 0.002900022082030773,
+      "p95_ms": 0.003700028173625469,
+      "min_ms": 0.002600019797682762
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Q-SHIELD — Post-Quantum Security Platform</title>
+<link rel="stylesheet" href="/static/styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <span class="brand-mark">🛡️</span>
+    <span class="brand-name">Q&#8209;SHIELD</span>
+    <span class="brand-sub">post-quantum security platform</span>
+  </div>
+  <nav class="nav" id="nav">
+    <a href="#/overview" data-page="overview">Overview</a>
+    <a href="#/scanner" data-page="scanner">Scanner</a>
+    <a href="#/migration" data-page="migration">Migration</a>
+    <a href="#/laboratory" data-page="laboratory">Laboratory</a>
+    <a href="#/exchange" data-page="exchange">Exchange</a>
+    <a href="#/assistant" data-page="assistant">Assistant</a>
+  </nav>
+  <div class="status-pill" id="status-pill"><span class="dot"></span><span id="status-text">connecting…</span></div>
+</header>
+
+<main id="app"><div class="loading">Q-SHIELD control center loading…</div></main>
+
+<footer class="foot">
+  Q-SHIELD 1.0 · ML-KEM-768 + X25519 → HKDF → AES-256-GCM · ML-DSA-65 ·
+  AI proposes → engine validates → human approves
+</footer>
+
+<div id="toast" class="toast"></div>
+<script src="/static/app.js"></script>
+</body>
+</html>
